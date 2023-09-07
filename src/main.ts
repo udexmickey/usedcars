@@ -13,7 +13,8 @@ async function bootstrap() {
   );
   app.useGlobalPipes(
     new ValidationPipe({
-      //the whitelist helps to remove any property that does not belong to the expected dto / payload
+      //the whitelist helps to remove any property that does not belong to
+      //the expected dto / payload
       whitelist: true,
     }),
   );

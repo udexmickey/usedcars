@@ -14,7 +14,7 @@ const scrypt = promisify(_script);
 export class AuthService {
   constructor(private userService: UsersService) {}
 
-  async singUp(email: string, password: string) {
+  async signUp(email: string, password: string) {
     try {
       //check if email exist
       const UserEmail = await this.userService.findEmail(email);
