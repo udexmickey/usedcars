@@ -18,6 +18,6 @@ async function bootstrap() {
       whitelist: true,
     }),
   );
-  await app.listen(3030);
+  await app.listen(process.env.PORT || 3030);
 }
 bootstrap();
